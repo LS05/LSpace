@@ -142,3 +142,65 @@ main {
   width: 400px;
   text-align: center; }
 
+.marquee {
+  transform: rotate(90deg);
+  position: fixed;
+  left: calc(100% - 500px);
+  top: 0;
+  width: 200px;
+  height: 100vh;
+  right: 0px;
+  --offset: 20vw;
+  --move-initial: calc(-25% + var(--offset));
+  --move-final: calc(-50% + var(--offset)); }
+
+.marquee__inner {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: flex;
+  position: relative;
+  transform: translate3d(var(--move-initial), 0, 0);
+  -webkit-animation: marquee 100s linear infinite;
+          animation: marquee 100s linear infinite;
+  -webkit-animation-play-state: running;
+          animation-play-state: running; }
+
+.marquee--long {
+  font-size: 1.25vw; }
+
+.marquee span {
+  display: inline-block;
+  white-space: nowrap;
+  color: #FFFF02;
+  font-size: 2vw;
+  padding: 0 2vw; }
+
+@-webkit-keyframes marquee {
+  0% {
+    transform: translateX(0); }
+  100% {
+    transform: translateX(-100%); } }
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0); }
+  100% {
+    transform: translateX(-100%); } }
+
+/*  
+ * on MacOs: System Preferences > 
+ *           Accessibility > 
+ *           Display > Reduce motion
+ */
+@media (prefers-reduced-motion: reduce) {
+  .marquee span {
+    -webkit-animation: none;
+            animation: none;
+    text-shadow: none;
+    width: auto;
+    display: block;
+    line-height: 1.5;
+    text-align: center;
+    white-space: normal; } }
+

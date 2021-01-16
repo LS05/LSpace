@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Luca Suriano | My Creed. What I stand for?</title>
+    <title>Luca Suriano | How can you reach me?</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
 </head>
@@ -26,6 +26,7 @@
             <div class="robert-wrapper">
               <img class="robert" src="images/robert.gif" />
               <p class="resize-hover__message">C'mon...Do you think is not responsive?</p>
+              <p class="resize-hover__message">Close me</p>
             </div>
           </div>
           <div id="reach__title">
@@ -48,7 +49,14 @@
               <p id="secret__show">Please be patient if I don’t get back to you. I’m having a busy time, and I check emails/messages once a day.</p>
             </div>
           </div>
-          <div id="vertical-sign"><p>This is a creative space This is a creative space</p></div>
+          <div class="marquee" style="--tw: 200vw; --ad: 2.5s;">
+            <div class="marquee__inner" aria-hidden="true">
+              <span>This is a creative space This is a creative space</span>
+              <span>This is a creative space This is a creative space</span>
+              <span>This is a creative space This is a creative space</span>
+              <span>This is a creative space This is a creative space</span>
+            </div>
+          </div>
     </main>
     <script type="text/javascript">
         var resizeId;
@@ -58,7 +66,7 @@
         window.addEventListener('resize', function() {
           document.querySelector('.resize-hover').style.display = 'flex';
           clearTimeout(resizeId);
-          resizeId = setTimeout(doneResizing, 500);
+          resizeId = setTimeout(doneResizing, 800);
         });
     </script>
 </body>
