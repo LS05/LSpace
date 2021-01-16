@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>{{ page.title }} | {{ site.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
+  </head>
+  <body>
+    {% include navigation.html %}
+    <main class="reach empty">
+      {{ content }}
+      <script type="text/javascript">
+        var resizeId;
+        var doneResizing = function() {
+          document.querySelector('.resize-hover').style.display = 'none';
+        }
+        window.addEventListener('resize', function() {
+          document.querySelector('.resize-hover').style.display = 'flex';
+          clearTimeout(resizeId);
+          resizeId = setTimeout(doneResizing, 800);
+        });
+    </script>
+    </main>
+  </body>
+</html>

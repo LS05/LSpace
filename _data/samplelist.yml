@@ -1,0 +1,14 @@
+docs_list_title: ACME Documentation
+docs:
+
+- title: LS
+  url: index.html
+
+- title: Creed
+  url: creed.html
+
+- title: Now
+  url: now.html
+
+- title: Reach
+  url: reach.html

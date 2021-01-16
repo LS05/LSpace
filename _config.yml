@@ -1,0 +1,17 @@
+name: LSpace
+title: ACME Website
+
+sass:
+  sass_dir: _sass
+  style: compressed # possible values: nested expanded compact compressed
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - package.json
+  - package-lock.json
+  - postcss.config.js
+  - "*.sketch"
+  - "webpack.*"

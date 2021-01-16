@@ -1,73 +1,40 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Luca Suriano | How can you reach me?</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css" />
-</head>
-<body>
-    <div class="navigation">
-      <nav>
-          <ul>
-            <li><a href="index.html" class="logo">LS</a></li>
-            <!--<li><a href="#">What?</a></li>-->
-            <li><a href="creed.html">Creed</a></li>
-            <!--<li><a href="#">Code</a></li>-->
-            <!--<li><a href="#">Music</a></li>-->
-            <li><a href="now.html">Now</a></li>
-            <li><a href="reach.html">Reach</a></li>
-          </ul>
-        </nav>
-    </div>
-    <main class="reach empty">
-          <div class="resize-hover">
-            <div class="robert-wrapper">
-              <img class="robert" src="images/robert.gif" />
-              <p class="resize-hover__message">C'mon...Do you think is not responsive?</p>
-              <p class="resize-hover__message">Close me</p>
-            </div>
-          </div>
-          <div id="reach__title">
-            <div class="title__top">
-              <h1>Reach</h1>
-            </div>
-            <div class="title__bottom">
-              <h1>Reach</h1>
-            </div>
-          </div>
-          <p>if you feel like <a href="https://www.youtube.com/watch?v=TtaVDYNZ1VE" target="_blank" class="reach__link">talking to me</a> reach me out at hello @ this domain .it</p>
-          <p class="or">OR</p>
-          <p>I’m on <a href="#" class="reach__link">LinkedIn</a>, <a href="#" class="reach__link">Twitter</a> and <a href="#" class="reach__link">Facebook</a></p>
-          <div id="controller">
-            <svg width="277" height="161" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><rect fill="#000" width="277" height="161" rx="8"/><g transform="translate(152 22)" fill="#FFF"><rect width="54" height="54" rx="8"/><rect x="60" width="54" height="54" rx="8"/><rect y="63" width="54" height="54" rx="8"/><rect x="60" y="63" width="54" height="54" rx="8"/></g><path fill="#FFF" d="M16 80h12v62H16zM30 80h12v62H30zM44 80h12v62H44zM58 80h12v62H58zM72 80h12v62H72zM86 80h12v62H86zM100 80h12v62h-12zM114 80h12v62h-12zM128 80h12v62h-12z"/><path fill="#000" d="M23 76h12v42H23zM37 76h12v42H37zM65 76h12v42H65zM79 76h12v42H79zM94 76h12v42H94zM121 76h12v42h-12z"/><g stroke="#FFF"><g transform="translate(16 10)"><circle cx="10" cy="10" r="10"/><path d="M16.22 2.293l2.254 2.417-6.926 6.459-2.254-2.417z"/></g><g transform="translate(46 10)"><circle cx="10" cy="10" r="10"/><path d="M16.22 2.293l2.254 2.417-6.926 6.459-2.254-2.417z"/></g><g transform="translate(76 10)"><circle cx="10" cy="10" r="10"/><path d="M16.22 2.293l2.254 2.417-6.926 6.459-2.254-2.417z"/></g><g transform="translate(106 10)"><circle cx="10" cy="10" r="10"/><path d="M16.22 2.293l2.254 2.417-6.926 6.459-2.254-2.417z"/></g><g transform="translate(106 40)"><circle cx="10" cy="10" r="10"/><path d="M16.22 2.293l2.254 2.417-6.926 6.459-2.254-2.417z"/></g><g transform="translate(76 40)"><circle cx="10" cy="10" r="10"/><path d="M16.22 2.293l2.254 2.417-6.926 6.459-2.254-2.417z"/></g><g transform="translate(46 40)"><circle cx="10" cy="10" r="10"/><path d="M16.22 2.293l2.254 2.417-6.926 6.459-2.254-2.417z"/></g><g transform="translate(16 40)"><circle cx="10" cy="10" r="10"/><path d="M16.22 2.293l2.254 2.417-6.926 6.459-2.254-2.417z"/></g></g></g></svg>
-          </div>
-          <div id="secret">
-            <div id="secret__hover">
-              <p>Hover for a secret!</p>
-              <p id="secret__show">Please be patient if I don’t get back to you. I’m having a busy time, and I check emails/messages once a day.</p>
-            </div>
-          </div>
-          <div class="marquee" style="--tw: 200vw; --ad: 2.5s;">
-            <div class="marquee__inner" aria-hidden="true">
-              <span>This is a creative space This is a creative space</span>
-              <span>This is a creative space This is a creative space</span>
-              <span>This is a creative space This is a creative space</span>
-              <span>This is a creative space This is a creative space</span>
-            </div>
-          </div>
-    </main>
-    <script type="text/javascript">
-        var resizeId;
-        var doneResizing = function() {
-          document.querySelector('.resize-hover').style.display = 'none';
-        }
-        window.addEventListener('resize', function() {
-          document.querySelector('.resize-hover').style.display = 'flex';
-          clearTimeout(resizeId);
-          resizeId = setTimeout(doneResizing, 800);
-        });
-    </script>
-</body>
-</html>
+---
+title: Reach 
+layout: reach
+---
+
+<div class="resize-hover">
+  <div class="robert-wrapper">
+    <img class="robert" src="images/robert.gif" />
+    <p class="resize-hover__message">C'mon...Do you think is not responsive?</p>
+    <p class="resize-hover__message">Close me</p>
+  </div>
+</div>
+<div id="reach__title">
+  <div class="title__top">
+    <h1>Reach</h1>
+  </div>
+  <div class="title__bottom">
+    <h1>Reach</h1>
+  </div>
+</div>
+<p>if you feel like <a href="https://www.youtube.com/watch?v=TtaVDYNZ1VE" target="_blank" class="reach__link">talking to me</a> reach me out at hello @ this domain .it</p>
+<p class="or">OR</p>
+<p>I’m on <a href="#" class="reach__link">LinkedIn</a>, <a href="#" class="reach__link">Twitter</a> and <a href="#" class="reach__link">Facebook</a></p>
+<div id="controller">
+  <svg width="277" height="161" xmlns="http://www.w3.org/2000/svg"><g fill="none" fill-rule="evenodd"><rect fill="#000" width="277" height="161" rx="8"/><g transform="translate(152 22)" fill="#FFF"><rect width="54" height="54" rx="8"/><rect x="60" width="54" height="54" rx="8"/><rect y="63" width="54" height="54" rx="8"/><rect x="60" y="63" width="54" height="54" rx="8"/></g><path fill="#FFF" d="M16 80h12v62H16zM30 80h12v62H30zM44 80h12v62H44zM58 80h12v62H58zM72 80h12v62H72zM86 80h12v62H86zM100 80h12v62h-12zM114 80h12v62h-12zM128 80h12v62h-12z"/><path fill="#000" d="M23 76h12v42H23zM37 76h12v42H37zM65 76h12v42H65zM79 76h12v42H79zM94 76h12v42H94zM121 76h12v42h-12z"/><g stroke="#FFF"><g transform="translate(16 10)"><circle cx="10" cy="10" r="10"/><path d="M16.22 2.293l2.254 2.417-6.926 6.459-2.254-2.417z"/></g><g transform="translate(46 10)"><circle cx="10" cy="10" r="10"/><path d="M16.22 2.293l2.254 2.417-6.926 6.459-2.254-2.417z"/></g><g transform="translate(76 10)"><circle cx="10" cy="10" r="10"/><path d="M16.22 2.293l2.254 2.417-6.926 6.459-2.254-2.417z"/></g><g transform="translate(106 10)"><circle cx="10" cy="10" r="10"/><path d="M16.22 2.293l2.254 2.417-6.926 6.459-2.254-2.417z"/></g><g transform="translate(106 40)"><circle cx="10" cy="10" r="10"/><path d="M16.22 2.293l2.254 2.417-6.926 6.459-2.254-2.417z"/></g><g transform="translate(76 40)"><circle cx="10" cy="10" r="10"/><path d="M16.22 2.293l2.254 2.417-6.926 6.459-2.254-2.417z"/></g><g transform="translate(46 40)"><circle cx="10" cy="10" r="10"/><path d="M16.22 2.293l2.254 2.417-6.926 6.459-2.254-2.417z"/></g><g transform="translate(16 40)"><circle cx="10" cy="10" r="10"/><path d="M16.22 2.293l2.254 2.417-6.926 6.459-2.254-2.417z"/></g></g></g></svg>
+</div>
+<div id="secret">
+  <div id="secret__hover">
+    <p>Hover for a secret!</p>
+    <p id="secret__show">Please be patient if I don’t get back to you. I’m having a busy time, and I check emails/messages once a day.</p>
+  </div>
+</div>
+<div class="marquee" style="--tw: 200vw; --ad: 2.5s;">
+  <div class="marquee__inner" aria-hidden="true">
+    <span>This is a creative space This is a creative space</span>
+    <span>This is a creative space This is a creative space</span>
+    <span>This is a creative space This is a creative space</span>
+    <span>This is a creative space This is a creative space</span>
+  </div>
+</div>
